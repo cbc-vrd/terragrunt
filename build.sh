@@ -57,7 +57,7 @@ function build_docker_image() {
      --build-arg OPENTOFU="${opentofu}" \
      --no-cache \
      --push \
-     --tag "${image_name}:${terraform}" \
+     --tag "${image_name}:tg${terragrunt}" \
      --tag "${image_name}:tf${terraform}" \
      --tag "${image_name}:otf${opentofu}" \
      --tag "${image_name}:latest" \
